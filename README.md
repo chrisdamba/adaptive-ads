@@ -54,7 +54,7 @@ Before you begin, ensure you have the following:
 
 ```bash
 git clone https://github.com/chrisdamba/adaptive-ads.git
-cd dynamic-ad-insertion-ott
+cd adaptive-ads
 ```
 
 ### 2. Set Up GCP Environment
