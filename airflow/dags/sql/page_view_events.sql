@@ -1,6 +1,6 @@
 INSERT {{ BIGQUERY_DATASET }}.{{ PAGE_VIEW_EVENTS_TABLE }}
 SELECT
-    timestamp,
+    timestamp AS ts,
     COALESCE(page, 'NA') AS page,
     COALESCE(auth, 'NA') AS auth,
     COALESCE(method, 'NA') AS method,

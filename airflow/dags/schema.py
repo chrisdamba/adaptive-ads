@@ -1,7 +1,6 @@
 schema = {
-    "listen_events" : [
-        {"name": "artist", "type": "STRING", "mode": "NULLABLE"},
-        {"name": "song", "type": "STRING", "mode": "NULLABLE"},
+    "watch_events" : [
+        {"name": "video", "type": "STRING", "mode": "NULLABLE"},
         {"name": "duration", "type": "FLOAT64", "mode": "NULLABLE"},
         {"name": "ts", "type": "TIMESTAMP", "mode": "NULLABLE"},
         {"name": "auth", "type": "STRING", "mode": "NULLABLE"},
@@ -14,6 +13,26 @@ schema = {
         {"name": "userId", "type": "INTEGER", "mode": "NULLABLE"},
         {"name": "lastName", "type": "STRING", "mode": "NULLABLE"},
         {"name": "firstName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "dateOfBirth", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "gender", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "registration", "type": "INTEGER", "mode": "NULLABLE"}
+    ],
+    "ad_events": [
+        {"name": "video", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "adType", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "duration", "type": "FLOAT64", "mode": "NULLABLE"},
+        {"name": "ts", "type": "TIMESTAMP", "mode": "NULLABLE"},
+        {"name": "auth", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "level", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "city", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "state", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "userAgent", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "lon", "type": "FLOAT64", "mode": "NULLABLE"},
+        {"name": "lat", "type": "FLOAT64", "mode": "NULLABLE"},
+        {"name": "userId", "type": "INTEGER", "mode": "NULLABLE"},
+        {"name": "lastName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "firstName", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "dateOfBirth", "type": "STRING", "mode": "NULLABLE"},
         {"name": "gender", "type": "STRING", "mode": "NULLABLE"},
         {"name": "registration", "type": "INTEGER", "mode": "NULLABLE"}
     ],
@@ -33,9 +52,11 @@ schema = {
         {"name": "lastName", "type": "STRING", "mode": "NULLABLE"},
         {"name": "firstName", "type": "STRING", "mode": "NULLABLE"},
         {"name": "gender", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "dateOfBirth", "type": "STRING", "mode": "NULLABLE"},
         {"name": "registration", "type": "INTEGER", "mode": "NULLABLE"},
-        {"name": "artist", "type": "STRING", "mode": "NULLABLE"},
-        {"name": "song", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "video", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "device", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "os", "type": "STRING", "mode": "NULLABLE"},
         {"name": "duration", "type": "FLOAT64", "mode": "NULLABLE"}
     ],
     "auth_events" : [
@@ -50,7 +71,10 @@ schema = {
         {"name": "lastName", "type": "STRING", "mode": "NULLABLE"},
         {"name": "firstName", "type": "STRING", "mode": "NULLABLE"},
         {"name": "gender", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "dateOfBirth", "type": "STRING", "mode": "NULLABLE"},
         {"name": "registration", "type": "INTEGER", "mode": "NULLABLE"},
+        {"name": "device", "type": "STRING", "mode": "NULLABLE"},
+        {"name": "os", "type": "STRING", "mode": "NULLABLE"},
         {"name": "success", "type": "BOOLEAN", "mode": "NULLABLE"}
     ]
 }

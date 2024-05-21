@@ -1,8 +1,9 @@
 INSERT {{ BIGQUERY_DATASET }}.{{ AD_EVENTS_TABLE }}
 SELECT
+    timestamp AS ts,
     COALESCE(adType, 'NA') AS adType,
+    COALESCE(videoTitle, 'NA') AS video,
     COALESCE(duration, -1) AS duration,
-    timestamp,
     COALESCE(auth, 'NA') AS auth,
     COALESCE(level, 'NA') AS level,
     COALESCE(city, 'NA') AS city,

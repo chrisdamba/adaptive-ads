@@ -1,0 +1,25 @@
+adaptive_ads:
+  outputs:
+    dev:
+      dataset: adaptive_ads_stg
+      fixed_retries: 1
+      keyfile: /.google/credentials/google_credentials.json
+      location: us-central1
+      method: service-account
+      priority: interactive
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+    prod:
+      dataset: adaptive_ads_prod
+      fixed_retries: 1
+      keyfile: /.google/credentials/google_credentials.json
+      location: us-central1
+      method: service-account
+      priority: interactive
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
+      threads: 4
+      timeout_seconds: 300
+      type: bigquery
+  target: dev

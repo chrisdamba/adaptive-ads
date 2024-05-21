@@ -12,7 +12,7 @@ with DAG(
     default_args = default_args,
     description = 'Test dbt',
     schedule_interval="@once", #At the 5th minute of every hour
-    start_date=datetime(2022,3,20),
+    start_date=datetime(2024,5,20),
     catchup=True,
     tags=['streamify', 'dbt']
 ) as dag:

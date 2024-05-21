@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+    - name: staging
+      database: "{{ env_var('GCP_PROJECT_ID') }}"
+      schema: adaptive_ads_stg
+      tables:
+        - name: watch_events
+        - name: ad_events
+        - name: page_view_events
+        - name: auth_events
+        - name: movies
+        - name: state_codes
